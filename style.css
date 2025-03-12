@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(209, 233, 241);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px repeat(5, 1fr);
+    grid-template-rows: 140px repeat(4, 1fr);
+    height: 100vh;
+}
+
+.sidebar-wrapper {
+    background-color: rgb(21, 133, 231);
+    color: white;
+    grid-row: 1 / 7;
+}
+
+div.links > ul {
+    list-style: none;
+}
+
+div.links > ul li:nth-child(6) {
+    margin-bottom: 30px;
+}
+
+div.navbar {
+    background-color: white;
+    grid-column: 2 / 7;
+}
+
+div.main-wrapper {
+    background-color: rgba(92, 92, 92, 0.085);
+    grid-area: 2 / 2 / 7 / 7;
+}
